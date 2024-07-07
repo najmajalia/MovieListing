@@ -1,6 +1,7 @@
 buildscript {
     dependencies {
         classpath ("com.android.tools.build:gradle:7.0.0")
+        classpath ("com.google.firebase:perf-plugin:1.4.2")
     }
 }
 

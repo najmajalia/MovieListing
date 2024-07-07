@@ -2,6 +2,7 @@
 agp = "8.3.0"
 coreTesting = "2.2.0"
 coreTestingVersion = "2.1.0"
+firebasePerfKtx = "21.0.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -30,6 +31,7 @@ junitJunit = "4.12"
 androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
 androidx-core-testing-v210 = { module = "androidx.arch.core:core-testing", version.ref = "coreTestingVersion" }
 datastore = {group = 'androidx.datastore', name = "datastore-preferences", version.ref = "datastore"}
+firebase-perf-ktx = { module = "com.google.firebase:firebase-perf-ktx", version.ref = "firebasePerfKtx" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationCore" }
 chucker = { module = "com.github.chuckerteam.chucker:library", version.ref = "chuckerVer" }

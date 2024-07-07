@@ -4,6 +4,7 @@ plugins {
     id("kotlin-kapt")
     alias(libs.plugins.daggerHilt)
     id("com.google.gms.google-services")
+    id ("com.google.firebase.firebase-perf")
 }
 
 android {
@@ -22,8 +23,13 @@ android {
 
 
 
-    
 
+    flavorDimensions += "version"
+    productFlavors {
+
+
+
+    }
 
 
 
@@ -68,9 +74,15 @@ dependencies {
     implementation(libs.retrofit2.converter)
     implementation(libs.datastore)
 
+
     implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
 
-    implementation("com.google.firebase:firebase-perf")
+    val firebaseVersion = "21.1.1"
+    implementation("com.google.firebase:firebase-core:$firebaseVersion")
+    implementation("com.google.firebase:firebase-analytics:$firebaseVersion")
+    //noinspection UseTomlInstead
+    implementation("com.google.firebase:firebase-perf-license:12.0.1")
+    implementation("com.google.firebase:perf-plugin:1.4.2")
 
     // Dagger Hilt
     kapt(libs.dagger.hilt.compiler)
